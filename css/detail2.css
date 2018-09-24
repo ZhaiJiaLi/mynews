@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+html,body{
+    width:7.5rem;
+    height:13.34rem;
+    overflow: hidden;
+    font-size: 0.32rem;
+    position: relative;
+}
+a,a:hover,a:active,a:visited,a:focus{
+    text-decoration: none;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.main{
+    width:100%;
+    height:100%;
+    overflow-y: auto;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+}
+.content{
+    width:100%;
+    /*padding:0 0.24rem;*/
+    box-sizing: border-box;
+}
+/*视频播放*/
+.playerArea{
+    position: relative;
+    width: 100%;
+    padding:0.44rem 0;
+}
+.videoBox{
+    width: 100%;
+    height: 4.84rem;
+    overflow: hidden;
+    background: #000;
+    padding: 0.32rem 0.86rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.videoPoster{
+    width: 100%;
+    height: 100%;
+    background: url(http://p1.ifengimg.com/a/2018_28/8eac97721239008_size31_w640_h360.jpg) no-repeat center;
+    background-size: contain;
+}
+.videoBtnplay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.61rem 0 0 -0.61rem;
+    width: 1.22rem;
+    height: 1.22rem;
+    overflow: hidden;
+    background: url(../img/playerbg08.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.playerTempo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.08rem;
+    overflow: hidden;
+    background: #a5a5a5;
+}
+.playerTempo span{
+    display: block;
+    height: 0.08rem;
+    overflow: hidden;
+    background: #c22626;
+}
+
+.user{
+    margin: 0.44rem 0;
+    overflow: hidden;
+    padding:0 0.24rem;
+}
+.user .name{
+    float: left;
+}
+.head{
+    width:0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    border:0.02rem solid #ccc;
+    margin-right: 0.28rem;
+    overflow: hidden;
+    float: left;
+}
+.head img{
+    width:100%;height: 100%;
+}
+.info {
+    color: #405b95;
+    font-size: .3rem;
+    overflow: hidden;
+}
+.info a{
+    display: block;
+    padding: 0 0 .06rem;
+}
+.info a .authorName{
+    color: #333;
+    font-size: .3rem;
+    margin-right: .08rem;
+    font-weight: 400;
+    line-height: 0.6rem;
+}
+.info .infoDate{
+    color: #999;
+    font-weight: 400;
+    font-size: .12rem;
+}
+.follow{
+    width:1.1rem;
+    height: 0.46rem;
+    background: #f54343;
+    border:0.04rem solid #f43535;
+    border-radius: 0.23rem;
+    color: #fff;
+    float: right;
+    font-size: 0.24rem;
+    text-align: center;
+    line-height: 0.46rem;
+    margin-top: 0.08rem;
+}
+.share{
+    padding: 0 0.24rem ;
+    /*background: #f1f1f1;*/
+    overflow: hidden;
+}
+.downloadBox{
+    float: left;
+}
+.shareBox{
+    float: right;
+    font-size: 0.28rem;
+    color: #969696
+}
+.share .downloadBox li{
+    float: left;
+    color: #969696;
+    margin-right: 0.25rem;
+}
+.share .downloadBox li span {
+    font-size: 0.2rem;
+}
+
+/*新闻列表*/
+.newsList,.newsList ul{
+    overflow: hidden;
+}
+.newsList ul li{
+    padding: 0.24rem;
+    height: 1.96rem;
+    overflow: hidden;
+    display: -webkit-box;
+    border-bottom: 0.02rem solid #f2f2f2;
+    box-sizing: border-box;
+}
+.title{
+    position: relative;
+    float: left;
+    width: 4.5rem;
+}
+.title h3{
+    font-size: 0.34rem;
+    color: #000;
+    line-height: 0.48rem;
+    height: 1.1rem;
+    overflow: hidden;
+    font-weight: normal;
+}
+.cmt{
+    width: 100%;
+    height: 0.3rem;
+    font-size: 0.24rem;
+    color: #999;
+    display: inline-block;
+}
+.smallTips{
+    float: left;
+}
+.smallTips img{
+    width: 0.2rem;
+    height: 0.2rem;
+    margin-top: 0.02rem;
+}
+.close{
+    float: right;
+}
+.imgBox{
+    width: 2.2rem;
+    margin-left: 0.3rem;
+    position: relative;
+    float: right;
+}
+.imgBox img{
+    width: 100%;
+}
+.maskBox{
+    position: relative;
+    z-index: 9999;
+    padding: 0 0 0.5rem;
+    margin-top: -1.5rem;
+    text-align: center;
+}
+.moreMask{
+    height: 2rem;
+    /*background: -moz-linear-gradient(bottom,rgba(255,255,255,0.1),rgba(255,255,255,0));*/
+    /*background: -webkit-gradient(linear,0 top,0 bottom,from(rgba(255,255,255,0)),to(#fff));*/
+    /*background: -o-linear-gradient(bottom,rgba(255,255,255,0.1),rgba(255,255,255,0));*/
+}
+.moreBtn{
+    cursor: pointer;
+    font-size: 0.32rem;
+    color: #000;
+    border-radius: 0.08rem;
+    line-height: 0.06rem;
+    padding: 0.1rem 0.2rem;
+}
+.moreBtn .icon-xiala-copy{
+    color: #f52525;
+}
+/*评论列表*/
+.commentList{
+    margin:0.3rem auto 0.5rem;
+    font-size: 0.26rem;
+    padding:0 0.24rem;
+}
+.commentHead{
+    padding-top: 0.4rem;
+    overflow: hidden;
+}
+.commentHead h5{
+    float: left;
+    font-size: 0.26rem;
+}
+.commentHead span{
+    float: right;
+    color: #999;
+}
+.comments li{
+    overflow: hidden;
+    /*border-bottom: 0.02rem solid #e4e4e4;*/
+    padding: 0.2rem 0;
+}
+.comments li .comHead{
+    float: left;
+    width: 0.56rem;
+    margin-right: 0.16rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.comments li .comHead img{
+    display: block;
+    width: 0.56rem;
+    height: 0.56rem;
+    overflow: hidden;
+}
+.comments li .comTxt{
+    overflow: hidden;
+}
+.comments li .comTxt .comTop{
+    overflow: hidden;
+}
+.comments li .comTxt .comUserInfo{
+    float: left;
+}
+.comments li .comTxt .like{
+    float: right;
+    line-height: 0.56rem;
+    color: #b5b5b5;
+}
+.comments li .comTxt .like a{
+    color: #b5b5b5;
+}
+.comments li .comTxt .comUser{
+    font-size: 0.22rem;
+}
+.comments li .comTxt .comAction{
+    color:#999;
+    font-size: 0.22rem;
+}
+.comments li .comContent{
+    padding-top: 0.12rem;
+    color: #000;
+    font-size: 0.26rem;
+}
+.commentsSub{
+    margin-left: 0.6rem;
+}
+
+
+
+
+/*填写评论*/
+footer{
+    width:100%;
+    height: 0.9rem;
+    background: #fff;
+    position: absolute;
+    bottom:0;
+    padding:0 0.24rem;
+    box-sizing: border-box;
+    line-height: 0.9rem;
+}
+footer span{
+    display: inline-block;
+    float: left;
+}
+footer .iconfont{
+    font-size: 0.40rem;
+}
+.edit{
+    display: inline-block;
+    width:3.26rem;
+    height: 0.66rem;
+    border-radius: 0.33rem;
+    background: #f2f2f2;
+    margin:0.12rem 0.3rem 0 0.68rem;
+    line-height: 0.66rem;
+    position: relative;
+    color: #ccc;
+}
+.edit input{
+    width:100%;height:100%;
+    border:0;background: none;
+    outline: none;
+}
+.edit .review{
+    position: absolute;
+    left:0.24rem;top:0;
+    font-size: 0.2rem;
+}
+.edit .review .iconfont{
+    font-size: 0.2rem;
+}
+.edit .look{
+    position: absolute;
+    right:0.16rem;top:0;
+}
+.option{
+    margin:0 0.23rem
+}
+.option:last-child{
+    margin-right: 0;
+}

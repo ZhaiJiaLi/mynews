@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    width: 7.5rem;
+    height: 13.34rem;
+    overflow: hidden;
+    position: relative;
+    font-size: 0.32rem;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 1.1rem;
+    box-sizing: border-box;
+}
+/*头部*/
+header{
+    width: 7.5rem;
+    height: 0.92rem;
+    /*background: dodgerblue;*/
+    padding:0.4rem 0.17rem 0;
+    overflow: hidden;
+
+}
+.logoworld{
+    width: 1.86rem;
+    height: 0.36rem;
+    /*background: pink;*/
+    margin-top: 0.28rem;
+    margin-right: 0.3rem;
+    float: left;
+}
+.logoworld .logo,.logoworld .logo img{
+    width: 0.36rem;
+    height: 0.36rem;
+    float: left;
+}
+.logoworld span{
+    font-size: 0.32rem;
+    color: #151616;
+    float: left;
+    line-height: 0.36rem;
+    margin-left: 0.05rem;
+    letter-spacing: 0.04rem;
+}
+.search{
+    width: 3.97rem;
+    height: 0.62rem;
+    background: #f2f2f2;
+    border-radius: 0.31rem;
+    border: 0;
+    margin-top: 0.15rem;
+    text-indent: 1em;
+    float: left;
+}
+header i.iconfont{
+    color:#838383 ;
+    font-size: 0.3rem;
+    margin-left: 0.4rem;
+    line-height: 0.92rem;
+    float: left;
+}
+/*导航栏*/
+nav{
+    width:100% ;
+    height: 0.76rem;
+}
+.navBox::-webkit-scrollbar {
+    display: none;
+}
+.navBox{
+    max-width:6.4rem;
+    height: 0.7rem;
+    margin: 0rem  0 0 0.2rem;
+    /*background: dodgerblue;*/
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    float: left;
+}
+.navBox .navList{
+    height: 0.54rem;
+    font-size: 0.28rem;
+    color: #757575;
+    margin-right: 0.4rem;
+    margin-top: 0.06rem;
+    flex-shrink: 0;
+    border-bottom:0.05rem solid #fff ;
+    float: left;
+}
+.navBox .selected{
+    color: #f32626;
+    border-bottom:0.05rem solid #f32626 ;
+}
+.add{
+    width: 0.9rem;
+    height: 0.5rem;
+    float: left;
+    font-size: 0.5rem;
+    line-height: 0.47rem;
+    color: #757575;
+    /*margin-left: 0.2rem;*/
+}
+/*轮播图*/
+banner{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.banimgBox,.banimgBox img{
+    width: 6.94rem;
+    height: 3.47rem;
+    margin: 0 auto;
+    background: dodgerblue;
+    border: 0.01rem solid #2a2a2a;
+}
+/*新闻列表section*/
+section{
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    overflow: hidden;
+    padding: 0 0.25rem;
+}
+.newsList ul li{
+    padding: 0.24rem 0;
+    height: 1.96rem;
+    overflow: hidden;
+    display: -webkit-box;
+    border-bottom: 0.02rem solid #f2f2f2;
+    box-sizing: border-box;
+}
+.title{
+    position: relative;
+    float: left;
+    width: 4.5rem;
+}
+.title h3{
+    font-size: 0.34rem;
+    color: #000;
+    line-height: 0.48rem;
+    height: 1.1rem;
+    overflow: hidden;
+    font-weight: normal;
+}
+.cmt{
+    width: 100%;
+    height: 0.3rem;
+    font-size: 0.24rem;
+    color: #999;
+    display: inline-block;
+}
+.smallTips{
+    float: left;
+}
+.smallTips img{
+    width: 0.2rem;
+    height: 0.2rem;
+    margin-top: 0.02rem;
+}
+.close{
+    float: right;
+}
+.imgBox{
+    width: 2.2rem;
+    margin-left: 0.3rem;
+    position: relative;
+    float: right;
+}
+.imgBox img{
+    width: 100%;
+}
+
+/*底部*/
+footer{
+    width: 7rem;
+    height: 1rem;
+    margin:0 0.25rem ;
+    /*background: palegreen;*/
+    position: absolute;
+    left:0rem;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+
+}
+.item{
+    width: 0.5rem;
+    height: 1rem;
+    /*background: deeppink;*/
+    font-size: 0.18rem;
+    padding-top: 0.12rem;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+.item i.iconfont{
+    width: 0.45rem;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    font-size: 0.36rem;
+    color: #4f4f4f;
+}
+.item span{
+    width: 0.45rem;
+    height: 0.2rem;
+    font-size: 0.18rem;
+    line-height: 0.43rem;
+    color: #b4b4b4;
+}
+footer .item.selected .iconfont,footer .item.selected span{
+    color: #f32626;
+}
